@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  min-height: 37px;
+  align-items: center;
+
+  .unSubscribeUser,
+  .subscribeUser {
+    button {
+
+      margin: 0px 0.3em;
+      border-radius: 5px;
+      border: 1px solid beige;
+      padding: 0.5em;
+      background: gainsboro;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    .headerLogo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      min-width: 32px;
+      position: absolute;
+      left: 5px;
+    }
+
+    span {
+      margin-left: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      align-self: center;
+      font-weight: 600;
+      padding-left: 30px;
+    }
+
+  }
+}

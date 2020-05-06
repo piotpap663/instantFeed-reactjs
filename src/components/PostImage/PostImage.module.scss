@@ -1,0 +1,146 @@
+@import '../../resources/scss/variables';
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 935px;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 60px;
+
+  .container {
+    max-width: 700px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      background-color: $headerColor;
+
+      div {
+        max-width: 50%;
+        display: flex;
+
+        span {
+          margin-left: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: flex;
+          align-self: center;
+          font-weight: 600;
+        }
+      }
+
+      .headerLogo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        min-width: 32px;
+      }
+
+
+
+      .author {}
+
+      .menu {
+        font-weight: 900;
+      }
+    }
+
+    .pictureContainer {
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .postInfo {
+      padding: 8px 16px;
+
+      .icons {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          svg {
+            margin-right: 12px;
+          }
+        }
+      }
+
+      .likes {
+        display: flex;
+        font-weight: 600;
+      }
+
+      .info {
+        .authorPanel {
+          display: flex;
+          font-weight: 600;
+
+          .author {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 50%;
+          }
+
+
+        }
+
+        .description {
+          display: flex;
+        }
+
+        .showMoreComments {
+          display: flex;
+          color: #999;
+          font-weight: 500;
+          border: 0;
+          padding: 0;
+        }
+
+        .commentsPanel {
+          .comment {
+            display: block;
+            text-align: left;
+
+            .author {
+              margin-right: 10px;
+              font-weight: 600;
+            }
+          }
+
+          .addComment {
+            display: flex;
+            justify-content: space-between;
+
+            textarea {
+              background: 0 0;
+              border: 0;
+              color: #262626;
+              font-size: inherit;
+              width: 100%;
+              max-height: 80px;
+              outline: 0;
+              padding: 0;
+              resize: none;
+            }
+
+            div {
+              button {
+                border: 0;
+                color: #3897f0;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
