@@ -26,24 +26,5 @@
         background: gainsboro;
       }
     }
-
-    &.mainLogo {
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    &.flexEnd {
-      display: flex;
-      justify-content: flex-end;
-
-    }
-
-    svg {
-      margin-left: 30px;
-    }
-
-    .actionButtons {
-      justify-content: center;
-    }
   }
 }
