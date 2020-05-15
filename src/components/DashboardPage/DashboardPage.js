@@ -11,6 +11,7 @@ class DashboardPage extends Component {
     this.state = {
       isLoading: false
     }
+
   }
 
   componentDidMount() {
@@ -31,6 +32,8 @@ class DashboardPage extends Component {
           console.error(error);
         })
     }
+    localStorage.setItem('save', performance.now() - window.timer);
+    window.timer = performance.now();
   }
 
   render() {

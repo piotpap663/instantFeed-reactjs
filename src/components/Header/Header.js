@@ -9,7 +9,7 @@ import styles from './Header.module.scss';
 const Header = ({ userId, logoutUserFromState, isAuthenticated }) => (
   <div className={styles.wrapper}>
     <div className={styles.con}>
-      <Link to='/'>
+      <Link to='/' onClick={() => window.timer = performance.now()}>
         <button>Home</button>
       </Link>
       <Link to='/addPost'>

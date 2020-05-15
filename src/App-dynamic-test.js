@@ -137,10 +137,6 @@ class App extends Component {
     return new Array(AMOUNT).fill().map((item, index) => this.generateOneHTMLElement(HTMLElem, index));
   }
 
-  componentDidMount() {
-    console.log('componentDidMount');
-    this.initMutationObserver();
-  }
 
   checkIfAddedElements(timestamp) {
     if (targetNode.children.length === AMOUNT) {
@@ -150,6 +146,11 @@ class App extends Component {
       return true;
     }
     return false;
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount');
+    this.initMutationObserver();
   }
 
   componentDidUpdate() {
@@ -167,11 +168,6 @@ class App extends Component {
 
     return (
       <div className="App" id="App">
-        {/* <Header /> */}
-        {/* <PostsWrapper>
-          {posts && posts.map(post => post.images ? <PostImage DATA={post} /> : <Post DATA={post} />)}
-        </PostsWrapper> */}
-        {/* <button onClick={() => { }}>{"ADD POST"}</button> */}
         {this.state.content}
       </div>
     );

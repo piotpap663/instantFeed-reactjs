@@ -1,3 +1,11 @@
+## How to run project ?
+Run mongoDB and server [https://github.com/piotpap663/instantFeed-server](https://github.com/piotpap663/instantFeed-server)
+
+`npm install` then 
+
+`npm start`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
